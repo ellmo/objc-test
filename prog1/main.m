@@ -7,38 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-//-- @interface
-@interface Fraction : NSObject
--(void) print;
--(void) setValues: (int)v1 : (int)v2;
-@end
-
-@implementation Fraction
-{
-    int numerator;
-    int denominator;
-}
-
--(void) setValues: (int)v1 :(int)v2 {
-    numerator = v1;
-    denominator = v2;
-}
-
--(void) print {
-    NSLog (@"%i/%i", numerator, denominator);
-}
-@end
+#import "Fraction.h"
 
 int main (int argc, const char *argv[]) {
     @autoreleasepool {
-        Fraction *fraction;
-        fraction = [Fraction new];
+        Fraction *fraction = [Fraction new];
         
         [fraction setValues:1 :3];
         
-        NSLog (@"The value of myFraction is:");
-        [fraction print];
+        NSLog (@"The value of myFraction is: %@", [fraction toString]);
+        
     }
     return 0;
 }

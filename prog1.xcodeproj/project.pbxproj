@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF06298619044829006E8BE4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF06298419044829006E8BE4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		AF06298519044829006E8BE4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC39F8918608043003B753A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				AFC39F8918608043003B753A /* main.m */,
 				AFC39F8D18608043003B753A /* prog1.1 */,
 				AFC39F8B18608043003B753A /* Supporting Files */,
+				AF06298419044829006E8BE4 /* Fraction.h */,
+				AF06298519044829006E8BE4 /* Fraction.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC39F8A18608043003B753A /* main.m in Sources */,
+				AF06298619044829006E8BE4 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +257,7 @@
 				AFC39F9318608043003B753A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
