@@ -8,12 +8,37 @@
 
 #import <Foundation/Foundation.h>
 
+//-- @interface
+@interface Fraction : NSObject
+-(void) print;
+-(void) setValues: (int)v1 : (int)v2;
+@end
+
+@implementation Fraction
+{
+    int numerator;
+    int denominator;
+}
+
+-(void) setValues: (int)v1 :(int)v2 {
+    numerator = v1;
+    denominator = v2;
+}
+
+-(void) print {
+    NSLog (@"%i/%i", numerator, denominator);
+}
+@end
+
 int main (int argc, const char *argv[]) {
     @autoreleasepool {
-        int sum;
-        sum = 50 + 25;
+        Fraction *fraction;
+        fraction = [Fraction new];
         
-        NSLog (@"The sum of 50 and 25 is %i", sum);
+        [fraction setValues:1 :3];
+        
+        NSLog (@"The value of myFraction is:");
+        [fraction print];
     }
     return 0;
 }
