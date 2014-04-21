@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AF06298619044829006E8BE4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
+		AF5F985E1905B52E00DD9946 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0629EF19054B72006E8BE4 /* XCTest.framework */; };
+		AF5F98641905B52E00DD9946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5F98621905B52E00DD9946 /* InfoPlist.strings */; };
+		AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5F986D1905B53F00DD9946 /* FractionTest.m */; };
+		AF5F98731905BE2100DD9946 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5F98681905B52E00DD9946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC39F7B18608043003B753A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC39F8218608043003B753A;
+			remoteInfo = prog1;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AFC39F8118608043003B753A /* CopyFiles */ = {
@@ -30,6 +44,11 @@
 		AF06298419044829006E8BE4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		AF06298519044829006E8BE4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; tabWidth = 4; };
 		AF0629EF19054B72006E8BE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF5F985D1905B52E00DD9946 /* prog1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prog1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5F98611905B52E00DD9946 /* prog1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prog1Tests-Info.plist"; sourceTree = "<group>"; };
+		AF5F98631905B52E00DD9946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF5F98671905B52E00DD9946 /* prog1Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "prog1Tests-Prefix.pch"; sourceTree = "<group>"; };
+		AF5F986D1905B53F00DD9946 /* FractionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FractionTest.m; path = ../FractionTest.m; sourceTree = "<group>"; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC39F8918608043003B753A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +57,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AF5F985A1905B52E00DD9946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5F985E1905B52E00DD9946 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFC39F8018608043003B753A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF5F985F1905B52E00DD9946 /* prog1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5F986D1905B53F00DD9946 /* FractionTest.m */,
+				AF5F98601905B52E00DD9946 /* Supporting Files */,
+			);
+			path = prog1Tests;
+			sourceTree = "<group>";
+		};
+		AF5F98601905B52E00DD9946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5F98611905B52E00DD9946 /* prog1Tests-Info.plist */,
+				AF5F98621905B52E00DD9946 /* InfoPlist.strings */,
+				AF5F98671905B52E00DD9946 /* prog1Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AFC39F7A18608043003B753A = {
 			isa = PBXGroup;
 			children = (
 				AFC39F8818608043003B753A /* prog1 */,
+				AF5F985F1905B52E00DD9946 /* prog1Tests */,
 				AFC39F8518608043003B753A /* Frameworks */,
 				AFC39F8418608043003B753A /* Products */,
 			);
@@ -62,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC39F8318608043003B753A /* prog1 */,
+				AF5F985D1905B52E00DD9946 /* prog1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +146,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AF5F985C1905B52E00DD9946 /* prog1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5F986A1905B52E00DD9946 /* Build configuration list for PBXNativeTarget "prog1Tests" */;
+			buildPhases = (
+				AF5F98591905B52E00DD9946 /* Sources */,
+				AF5F985A1905B52E00DD9946 /* Frameworks */,
+				AF5F985B1905B52E00DD9946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5F98691905B52E00DD9946 /* PBXTargetDependency */,
+			);
+			name = prog1Tests;
+			productName = prog1Tests;
+			productReference = AF5F985D1905B52E00DD9946 /* prog1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AFC39F8218608043003B753A /* prog1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFC39F9118608043003B753A /* Build configuration list for PBXNativeTarget "prog1" */;
@@ -123,6 +189,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jakub Żuchowski";
+				TargetAttributes = {
+					AF5F985C1905B52E00DD9946 = {
+						TestTargetID = AFC39F8218608043003B753A;
+					};
+				};
 			};
 			buildConfigurationList = AFC39F7E18608043003B753A /* Build configuration list for PBXProject "prog1" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -137,11 +208,32 @@
 			projectRoot = "";
 			targets = (
 				AFC39F8218608043003B753A /* prog1 */,
+				AF5F985C1905B52E00DD9946 /* prog1Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AF5F985B1905B52E00DD9946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5F98641905B52E00DD9946 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AF5F98591905B52E00DD9946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */,
+				AF5F98731905BE2100DD9946 /* Fraction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFC39F7F18608043003B753A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +245,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AF5F98691905B52E00DD9946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC39F8218608043003B753A /* prog1 */;
+			targetProxy = AF5F98681905B52E00DD9946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF5F98621905B52E00DD9946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5F98631905B52E00DD9946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		AF5F986B1905B52E00DD9946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prog1Tests/prog1Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "prog1Tests/prog1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF5F986C1905B52E00DD9946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "prog1Tests/prog1Tests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "prog1Tests/prog1Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		AFC39F8F18608043003B753A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,6 +394,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF5F986A1905B52E00DD9946 /* Build configuration list for PBXNativeTarget "prog1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5F986B1905B52E00DD9946 /* Debug */,
+				AF5F986C1905B52E00DD9946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AFC39F7E18608043003B753A /* Build configuration list for PBXProject "prog1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
