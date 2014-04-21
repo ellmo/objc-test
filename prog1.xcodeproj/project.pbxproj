@@ -8,21 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF06298619044829006E8BE4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
-		AF0629F019054B72006E8BE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0629EF19054B72006E8BE4 /* XCTest.framework */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AF0629FA19054B72006E8BE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFC39F7B18608043003B753A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFC39F8218608043003B753A;
-			remoteInfo = prog1;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AFC39F8118608043003B753A /* CopyFiles */ = {
@@ -40,7 +29,6 @@
 /* Begin PBXFileReference section */
 		AF06298419044829006E8BE4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		AF06298519044829006E8BE4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; tabWidth = 4; };
-		AF0629EE19054B72006E8BE4 /* prog1 Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prog1 Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0629EF19054B72006E8BE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,14 +38,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF0629EB19054B72006E8BE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF0629F019054B72006E8BE4 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AFC39F8018608043003B753A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				AFC39F8318608043003B753A /* prog1 */,
-				AF0629EE19054B72006E8BE4 /* prog1 Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,24 +98,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF0629ED19054B72006E8BE4 /* prog1 Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF0629FE19054B72006E8BE4 /* Build configuration list for PBXNativeTarget "prog1 Tests" */;
-			buildPhases = (
-				AF0629EA19054B72006E8BE4 /* Sources */,
-				AF0629EB19054B72006E8BE4 /* Frameworks */,
-				AF0629EC19054B72006E8BE4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF0629FB19054B72006E8BE4 /* PBXTargetDependency */,
-			);
-			name = "prog1 Tests";
-			productName = "prog1 Tests";
-			productReference = AF0629EE19054B72006E8BE4 /* prog1 Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		AFC39F8218608043003B753A /* prog1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFC39F9118608043003B753A /* Build configuration list for PBXNativeTarget "prog1" */;
@@ -162,11 +123,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jakub Żuchowski";
-				TargetAttributes = {
-					AF0629ED19054B72006E8BE4 = {
-						TestTargetID = AFC39F8218608043003B753A;
-					};
-				};
 			};
 			buildConfigurationList = AFC39F7E18608043003B753A /* Build configuration list for PBXProject "prog1" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -181,29 +137,11 @@
 			projectRoot = "";
 			targets = (
 				AFC39F8218608043003B753A /* prog1 */,
-				AF0629ED19054B72006E8BE4 /* prog1 Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		AF0629EC19054B72006E8BE4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		AF0629EA19054B72006E8BE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AFC39F7F18608043003B753A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,57 +153,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AF0629FB19054B72006E8BE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AFC39F8218608043003B753A /* prog1 */;
-			targetProxy = AF0629FA19054B72006E8BE4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		AF0629FC19054B72006E8BE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "prog1 Tests/prog1 Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "prog1 Tests/prog1 Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AF0629FD19054B72006E8BE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "prog1 Tests/prog1 Tests-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "prog1 Tests/prog1 Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		AFC39F8F18608043003B753A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,15 +245,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF0629FE19054B72006E8BE4 /* Build configuration list for PBXNativeTarget "prog1 Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF0629FC19054B72006E8BE4 /* Debug */,
-				AF0629FD19054B72006E8BE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AFC39F7E18608043003B753A /* Build configuration list for PBXProject "prog1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
