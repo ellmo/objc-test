@@ -9,17 +9,21 @@
 #import "Fraction.h"
 
 @implementation Fraction
-{
-    int numerator;
-    int denominator;
-}
-
--(void) setValues: (int)v1 :(int)v2 {
-    numerator = v1;
-    denominator = v2;
-}
 
 -(NSString *) toString {
-    return [NSString stringWithFormat:@"%d/%d", numerator, denominator];
+    if (_denominator != 0) {
+        return [NSString stringWithFormat:@"%d/%d", _numerator, _denominator];
+    }
+    else {
+        return @"NAN";
+    }
+}
+
+-(double)toDouble {
+    if (_denominator != 0) {
+        return (double) _numerator / _denominator ;
+    } else {
+        return NAN;
+    }
 }
 @end

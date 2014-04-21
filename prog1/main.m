@@ -13,9 +13,11 @@ int main (int argc, const char *argv[]) {
     @autoreleasepool {
         Fraction *fraction = [Fraction new];
         
-        [fraction setValues:1 :3];
+        fraction.numerator = 1;
+        fraction.denominator = 3;
         
         NSLog (@"The value of myFraction is: %@", [fraction toString]);
+        NSLog(@"The double value of fraction is: %f", [fraction toDouble]);
         
     }
     return 0;

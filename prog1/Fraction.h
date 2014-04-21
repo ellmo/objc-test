@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Fraction : NSObject
+
+@property int numerator, denominator;
+
 -(NSString *) toString;
--(void) setValues: (int)v1 : (int)v2;
+-(double) toDouble;
+
 @end
