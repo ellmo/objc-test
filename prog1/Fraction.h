@@ -12,6 +12,8 @@
 
 @property int numerator, denominator;
 
+-(void)setTo: (int)n over: (int)d;
+
 -(NSString *) toString;
 -(double) toDouble;
 

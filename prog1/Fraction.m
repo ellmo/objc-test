@@ -10,6 +10,11 @@
 
 @implementation Fraction
 
+-(void)setTo:(int)n over:(int)d{
+    _numerator = n;
+    _denominator = d;
+}
+
 -(NSString *) toString {
     if (_denominator != 0) {
         return [NSString stringWithFormat:@"%d/%d", _numerator, _denominator];
