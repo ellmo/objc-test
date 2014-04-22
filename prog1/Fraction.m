@@ -47,13 +47,29 @@
 
 -(Fraction *) subtract: (Fraction *)fraction
 {
+    Fraction *negative = [Fraction new];
+    [negative setTo: -fraction.numerator
+               over: fraction.denominator];
+    
+    return [self add: negative];
+}
+
+-(Fraction *)multiply:(Fraction *)fraction
+{
     Fraction *result = [Fraction new];
     
-    int newDenominator = _denominator * fraction.denominator;
-    int newNumerator = (_numerator * fraction.denominator) - (_denominator * fraction.numerator);
-    [result setTo:newNumerator over:newDenominator];
+    [result setTo:(_numerator * fraction.numerator)
+             over:(_denominator * fraction.denominator)];
     
     return [result reduce];
+}
+
+-(Fraction *)divide:(Fraction *)fraction
+{
+    Fraction *inversed = [Fraction new];
+    [inversed setTo:fraction.denominator over:fraction.numerator];
+    
+    return [self multiply: inversed];
 }
 
 -(NSString *) toString

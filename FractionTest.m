@@ -93,4 +93,34 @@
     XCTAssertEqualObjects([result toString], [expectedResult toString]);
 }
 
+- (void)testMultiply
+{
+    Fraction *fraction, *fraction2, *result, *expectedResult;
+    
+    fraction = [Fraction new];
+    fraction2 = [Fraction new];
+    expectedResult = [Fraction new];
+    
+    [fraction setTo:2 over:3];
+    [fraction2 setTo:5 over:8];
+    result = [fraction multiply: fraction2];
+    [expectedResult setTo:5 over:12];
+    XCTAssertEqualObjects([result toString], [expectedResult toString]);
+}
+
+- (void)testDivide
+{
+    Fraction *fraction, *fraction2, *result, *expectedResult;
+    
+    fraction = [Fraction new];
+    fraction2 = [Fraction new];
+    expectedResult = [Fraction new];
+    
+    [fraction setTo:2 over:3];
+    [fraction2 setTo:5 over:8];
+    result = [fraction divide: fraction2];
+    [expectedResult setTo:16 over:15];
+    XCTAssertEqualObjects([result toString], [expectedResult toString]);
+}
+
 @end
