@@ -17,6 +17,8 @@
 		AF9911FE1906AD010090228F /* RectangleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9911FD1906AD010090228F /* RectangleTest.m */; };
 		AF9912011906B9990090228F /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912001906B9990090228F /* Square.m */; };
 		AF9912021906B9990090228F /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912001906B9990090228F /* Square.m */; };
+		AF9912051906BB230090228F /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912041906BB230090228F /* XYPoint.m */; };
+		AF9912061906BB230090228F /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912041906BB230090228F /* XYPoint.m */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
@@ -59,6 +61,8 @@
 		AF9911FD1906AD010090228F /* RectangleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleTest.m; sourceTree = "<group>"; };
 		AF9911FF1906B9990090228F /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		AF9912001906B9990090228F /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		AF9912031906BB230090228F /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		AF9912041906BB230090228F /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC39F8918608043003B753A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				AF9911F91906AB890090228F /* Rectangle.m */,
 				AF9911FF1906B9990090228F /* Square.h */,
 				AF9912001906B9990090228F /* Square.m */,
+				AF9912031906BB230090228F /* XYPoint.h */,
+				AF9912041906BB230090228F /* XYPoint.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */,
+				AF9912061906BB230090228F /* XYPoint.m in Sources */,
 				AF5F98731905BE2100DD9946 /* Fraction.m in Sources */,
 				AF9911FB1906AB890090228F /* Rectangle.m in Sources */,
 				AF9912021906B9990090228F /* Square.m in Sources */,
@@ -268,6 +275,7 @@
 				AFC39F8A18608043003B753A /* main.m in Sources */,
 				AF06298619044829006E8BE4 /* Fraction.m in Sources */,
 				AF9911FA1906AB890090228F /* Rectangle.m in Sources */,
+				AF9912051906BB230090228F /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
