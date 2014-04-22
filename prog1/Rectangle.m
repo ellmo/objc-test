@@ -7,15 +7,30 @@
 //
 
 #import "Rectangle.h"
+#import "XYPoint.h"
+
 
 @implementation Rectangle
+{
+    XYPoint *origin;
+}
 
 @synthesize width, height;
+
+-(void)setOrigin:(XYPoint *)point
+{
+    origin = point;
+}
 
 -(void)setWidth:(int)w andHeight:(int)h
 {
     width = w;
     height = h;
+}
+
+-(XYPoint *)origin
+{
+    return origin;
 }
 
 -(int)area

@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class XYPoint;
+
 @interface Rectangle : NSObject
 
 @property int width, height;
 
+-(void) setOrigin: (XYPoint *)point;
 -(void) setWidth: (int) w andHeight: (int) h;
 
+-(XYPoint *)origin;
 -(int) area;
 -(int) perimeter;
 
