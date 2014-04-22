@@ -16,6 +16,14 @@
 - (void)setUp { [super setUp]; }
 - (void)tearDown { [super tearDown]; }
 
+- (void)testMethods
+{
+    Fraction *fraction = [Fraction new];
+    SEL method;
+    method = @selector(setTo:over:);
+    XCTAssertTrue([fraction respondsToSelector:method]);
+}
+
 - (void)testSetTo
 {
     Fraction *fraction = [Fraction new];
