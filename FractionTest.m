@@ -63,4 +63,34 @@
     XCTAssertEqualObjects([result toString], [expectedResult toString]);
 }
 
+- (void)testSubtract
+{
+    Fraction *fraction, *fraction2, *result, *expectedResult;
+    
+    fraction = [Fraction new];
+    fraction2 = [Fraction new];
+    expectedResult = [Fraction new];
+    
+    [fraction setTo:2 over:3];
+    [fraction2 setTo:5 over:8];
+    result = [fraction subtract: fraction2];
+    [expectedResult setTo:1 over:24];
+    XCTAssertEqualObjects([result toString], [expectedResult toString]);
+}
+
+- (void)testSubtractWithReduction
+{
+    Fraction *fraction, *fraction2, *result, *expectedResult;
+    
+    fraction = [Fraction new];
+    fraction2 = [Fraction new];
+    expectedResult = [Fraction new];
+    
+    [fraction setTo:3 over:10];
+    [fraction2 setTo:1 over:10];
+    result = [fraction subtract: fraction2];
+    [expectedResult setTo:1 over:5];
+    XCTAssertEqualObjects([result toString], [expectedResult toString]);
+}
+
 @end

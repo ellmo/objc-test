@@ -34,14 +34,24 @@
     return self;
 }
 
--(Fraction *) add: (Fraction *)frac2
+-(Fraction *) add: (Fraction *)fraction
 {
     Fraction *result = [Fraction new];
     
-    int newDenominator = _denominator * frac2.denominator;
-    int newNumerator = (_numerator * frac2.denominator) + (_denominator * frac2.numerator);
-    result.numerator = newNumerator;
-    result.denominator = newDenominator;
+    int newDenominator = _denominator * fraction.denominator;
+    int newNumerator = (_numerator * fraction.denominator) + (_denominator * fraction.numerator);
+    [result setTo:newNumerator over:newDenominator];
+    
+    return [result reduce];
+}
+
+-(Fraction *) subtract: (Fraction *)fraction
+{
+    Fraction *result = [Fraction new];
+    
+    int newDenominator = _denominator * fraction.denominator;
+    int newNumerator = (_numerator * fraction.denominator) - (_denominator * fraction.numerator);
+    [result setTo:newNumerator over:newDenominator];
     
     return [result reduce];
 }
