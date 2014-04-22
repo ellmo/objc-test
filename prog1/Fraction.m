@@ -16,16 +16,34 @@
     _denominator = d;
 }
 
+-(Fraction *) reduce
+{
+    int newNumerator = _numerator;
+    int newDenominator = _denominator;
+    int temp;
+    
+    while (newDenominator != 0)
+    {
+        temp = newNumerator % newDenominator;
+        newNumerator = newDenominator;
+        newDenominator = temp;
+    }
+    _numerator /= newNumerator;
+    _denominator /= newNumerator;
+    
+    return self;
+}
+
 -(Fraction *) add: (Fraction *)frac2
 {
-    Fraction *result = [[Fraction alloc] init];
+    Fraction *result = [Fraction new];
     
     int newDenominator = _denominator * frac2.denominator;
     int newNumerator = (_numerator * frac2.denominator) + (_denominator * frac2.numerator);
     result.numerator = newNumerator;
     result.denominator = newDenominator;
     
-    return result;
+    return [result reduce];
 }
 
 -(NSString *) toString

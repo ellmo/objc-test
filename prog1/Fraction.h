@@ -12,8 +12,9 @@
 
 @property int numerator, denominator;
 
--(void)setTo: (int)n over: (int)d;
--(Fraction*)add: (Fraction*)frac2;
+-(void) setTo: (int)n over: (int)d;
+-(Fraction*) reduce;
+-(Fraction*) add: (Fraction*)frac2;
 
 -(NSString *) toString;
 -(double) toDouble;
