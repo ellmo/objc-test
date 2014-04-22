@@ -12,12 +12,11 @@
 int main (int argc, const char *argv[]) {
     @autoreleasepool {
         Fraction *fraction = [Fraction new];
+        Fraction *fraction2 = [Fraction new];
         
-        [fraction setTo:27 over:86];
-        
-        NSLog (@"The value of myFraction is: %@", [fraction toString]);
-        NSLog(@"The double value of fraction is: %f", [fraction toDouble]);
-        
+        [fraction setTo:2 over:3];
+        [fraction2 setTo:5 over:8];
+        NSLog(@"%@ + %@ = %@", [fraction toString], [fraction2 toString], [[fraction add:fraction2] toString]);
     }
     return 0;
 }

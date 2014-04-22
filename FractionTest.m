@@ -13,13 +13,13 @@
 
 @implementation FractionTest
 {
-    Fraction *fraction;
+
 }
 
 - (void)setUp
 {
     [super setUp];
-    fraction = [Fraction new];
+
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -29,10 +29,26 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSetTo
 {
+    Fraction *fraction = [Fraction new];
     [fraction setTo:2 over:3];
     XCTAssertEqualObjects([fraction toString], @"2/3");
+}
+
+- (void)testAdd
+{
+    Fraction *fraction, *fraction2, *result, *expectedResult;
+    
+    fraction = [Fraction new];
+    fraction2 = [Fraction new];
+    expectedResult = [Fraction new];
+    
+    [fraction setTo:2 over:3];
+    [fraction2 setTo:5 over:8];
+    result = [fraction add:fraction2];
+    [expectedResult setTo:31 over:24];
+    XCTAssertEqualObjects([result toString], [expectedResult toString]);
 }
 
 @end
