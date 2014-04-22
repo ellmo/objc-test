@@ -10,12 +10,14 @@
 
 @implementation Fraction
 
--(void)setTo:(int)n over:(int)d{
+-(void)setTo:(int)n over:(int)d
+{
     _numerator = n;
     _denominator = d;
 }
 
--(Fraction *)add:(Fraction *)frac2 {
+-(Fraction *) add: (Fraction *)frac2
+{
     Fraction *result = [[Fraction alloc] init];
     
     int newDenominator = _denominator * frac2.denominator;
@@ -26,7 +28,8 @@
     return result;
 }
 
--(NSString *) toString {
+-(NSString *) toString
+{
     if (_denominator != 0) {
         return [NSString stringWithFormat:@"%d/%d", _numerator, _denominator];
     }
@@ -35,7 +38,8 @@
     }
 }
 
--(double)toDouble {
+-(double) toDouble
+{
     if (_denominator != 0) {
         return (double) _numerator / _denominator ;
     } else {
