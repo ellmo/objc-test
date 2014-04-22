@@ -15,22 +15,12 @@
     XYPoint *origin;
 }
 
-@synthesize width, height;
-
--(void)setOrigin:(XYPoint *)point
-{
-    origin = point;
-}
+@synthesize width, height, origin;
 
 -(void)setWidth:(int)w andHeight:(int)h
 {
     width = w;
     height = h;
-}
-
--(XYPoint *)origin
-{
-    return origin;
 }
 
 -(int)area
