@@ -15,10 +15,8 @@
 @property int width, height;
 @property XYPoint* origin;
 
-//-(void) setOrigin: (XYPoint *)point;
 -(void) setWidth: (int) w andHeight: (int) h;
 
-//-(XYPoint *)origin;
 -(int) area;
 -(int) perimeter;
 
