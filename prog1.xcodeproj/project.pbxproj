@@ -12,6 +12,11 @@
 		AF5F98641905B52E00DD9946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5F98621905B52E00DD9946 /* InfoPlist.strings */; };
 		AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5F986D1905B53F00DD9946 /* FractionTest.m */; };
 		AF5F98731905BE2100DD9946 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
+		AF9911FA1906AB890090228F /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9911F91906AB890090228F /* Rectangle.m */; };
+		AF9911FB1906AB890090228F /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9911F91906AB890090228F /* Rectangle.m */; };
+		AF9911FE1906AD010090228F /* RectangleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9911FD1906AD010090228F /* RectangleTest.m */; };
+		AF9912011906B9990090228F /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912001906B9990090228F /* Square.m */; };
+		AF9912021906B9990090228F /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912001906B9990090228F /* Square.m */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
@@ -49,6 +54,11 @@
 		AF5F98631905B52E00DD9946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF5F98671905B52E00DD9946 /* prog1Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "prog1Tests-Prefix.pch"; sourceTree = "<group>"; };
 		AF5F986D1905B53F00DD9946 /* FractionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FractionTest.m; path = ../FractionTest.m; sourceTree = "<group>"; };
+		AF9911F81906AB890090228F /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		AF9911F91906AB890090228F /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		AF9911FD1906AD010090228F /* RectangleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleTest.m; sourceTree = "<group>"; };
+		AF9911FF1906B9990090228F /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		AF9912001906B9990090228F /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC39F8918608043003B753A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +89,7 @@
 		AF5F985F1905B52E00DD9946 /* prog1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				AF9911FD1906AD010090228F /* RectangleTest.m */,
 				AF5F986D1905B53F00DD9946 /* FractionTest.m */,
 				AF5F98601905B52E00DD9946 /* Supporting Files */,
 			);
@@ -93,6 +104,19 @@
 				AF5F98671905B52E00DD9946 /* prog1Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF9911FC1906AB8E0090228F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AF06298419044829006E8BE4 /* Fraction.h */,
+				AF06298519044829006E8BE4 /* Fraction.m */,
+				AF9911F81906AB890090228F /* Rectangle.h */,
+				AF9911F91906AB890090228F /* Rectangle.m */,
+				AF9911FF1906B9990090228F /* Square.h */,
+				AF9912001906B9990090228F /* Square.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 		AFC39F7A18608043003B753A = {
@@ -126,11 +150,10 @@
 		AFC39F8818608043003B753A /* prog1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF9911FC1906AB8E0090228F /* models */,
 				AFC39F8918608043003B753A /* main.m */,
 				AFC39F8D18608043003B753A /* prog1.1 */,
 				AFC39F8B18608043003B753A /* Supporting Files */,
-				AF06298419044829006E8BE4 /* Fraction.h */,
-				AF06298519044829006E8BE4 /* Fraction.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -231,6 +254,9 @@
 			files = (
 				AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */,
 				AF5F98731905BE2100DD9946 /* Fraction.m in Sources */,
+				AF9911FB1906AB890090228F /* Rectangle.m in Sources */,
+				AF9912021906B9990090228F /* Square.m in Sources */,
+				AF9911FE1906AD010090228F /* RectangleTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9912011906B9990090228F /* Square.m in Sources */,
 				AFC39F8A18608043003B753A /* main.m in Sources */,
 				AF06298619044829006E8BE4 /* Fraction.m in Sources */,
+				AF9911FA1906AB890090228F /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +429,7 @@
 				AF5F986C1905B52E00DD9946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFC39F7E18608043003B753A /* Build configuration list for PBXProject "prog1" */ = {
 			isa = XCConfigurationList;

@@ -14,8 +14,8 @@ int main (int argc, const char *argv[]) {
         Fraction *fraction = [Fraction new];
         Fraction *fraction2 = [Fraction new];
         
-        [fraction setTo:2 over:3];
-        [fraction2 setTo:5 over:8];
+        [fraction setTo:2 over:5];
+        [fraction2 setTo:4 over:8];
         NSLog(@"%@ + %@ = %@", [fraction toString], [fraction2 toString], [[fraction add:fraction2] toString]);
     }
     return 0;
