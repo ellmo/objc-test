@@ -24,6 +24,18 @@
     XCTAssertTrue([fraction respondsToSelector:method]);
 }
 
+- (void)testStaticMethods
+{
+    NSMutableArray *fractions = [NSMutableArray new];
+    #pragma unused(fractions)
+    
+    for (int i = 0; i < 3; i++) {
+        [fractions addObject: [[Fraction allocF] init]] ;
+    }
+    XCTAssertTrue([Fraction count] == 3);
+    XCTAssertTrue([fractions count] == 3);
+}
+
 - (void)testInitWithOver
 {
     Fraction *fraction, *fraction2;

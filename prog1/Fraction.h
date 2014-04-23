@@ -12,6 +12,9 @@
 
 @property int numerator, denominator;
 
++(Fraction *) allocF;
++(int) count;
+
 -(instancetype) initWith: (int)n over: (int)d;
 
 -(void) setTo: (int)n over: (int)d;

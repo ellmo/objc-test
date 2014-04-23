@@ -8,7 +8,20 @@
 
 #import "Fraction.h"
 
+static int gCounter;
+
 @implementation Fraction
+
++(Fraction *)allocF
+{
+    gCounter++;
+    return [Fraction alloc];
+}
+
++(int)count
+{
+    return gCounter;
+}
 
 -(instancetype) init {
     return [self initWith: 0 over: 1];
