@@ -10,6 +10,20 @@
 
 @implementation Fraction
 
+-(instancetype) init {
+    return [self initWith: 0 over: 1];
+}
+
+-(instancetype) initWith: (int)n over:(int)d
+{
+    self = [super init];
+    
+    if (self)
+        [self setTo:n over:d];
+    
+    return self;
+}
+
 -(void)setTo:(int)n over:(int)d
 {
     _numerator = n;

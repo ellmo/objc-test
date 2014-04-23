@@ -12,6 +12,8 @@
 
 @property int numerator, denominator;
 
+-(instancetype) initWith: (int)n over: (int)d;
+
 -(void) setTo: (int)n over: (int)d;
 -(Fraction*) reduce;
 -(Fraction*) add: (Fraction*)fraction;

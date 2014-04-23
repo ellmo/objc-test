@@ -24,6 +24,16 @@
     XCTAssertTrue([fraction respondsToSelector:method]);
 }
 
+- (void)testInitWithOver
+{
+    Fraction *fraction, *fraction2;
+    fraction = [[Fraction alloc] initWith:5 over:11];
+    fraction2 = [Fraction new];
+    [fraction2 setTo:5 over:11];
+    XCTAssertEqualObjects([fraction toString], [fraction2 toString]);
+    
+}
+
 - (void)testSetTo
 {
     Fraction *fraction = [Fraction new];
