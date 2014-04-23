@@ -7,21 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Fraction.h"
+#import "GlobalThingieChanger.h"
+
+int gSomeGlobalThingie = 0;
 
 int main (int argc, const char *argv[]) {
     @autoreleasepool {
-        @try {
-            @throw [NSException exceptionWithName:@"test exception"
-                                           reason:@"becasue I need it for tests"
-                                         userInfo:nil];
-        }
-        @catch (NSException *exception) {
-            NSLog(@"exception caught");
-        }
-        @finally {
-            NSLog(@"In the finally block now");
-        }
+        GlobalThingieChanger *frank = [GlobalThingieChanger new];
+        [frank add:3];
+        NSLog(@"global thingie = %d", gSomeGlobalThingie);
+        NSLog(@"global thingie in the instance = %@", [frank toString]);
     }
     return 0;
 }
