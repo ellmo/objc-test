@@ -11,8 +11,17 @@
 
 int main (int argc, const char *argv[]) {
     @autoreleasepool {
-        Fraction *f1 = [Fraction new];
-        [f1 setTo:2 over:3];
+        @try {
+            @throw [NSException exceptionWithName:@"test exception"
+                                           reason:@"becasue I need it for tests"
+                                         userInfo:nil];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"exception caught");
+        }
+        @finally {
+            NSLog(@"In the finally block now");
+        }
     }
     return 0;
 }
