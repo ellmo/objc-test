@@ -22,7 +22,6 @@
 		AF9912091906D2840090228F /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912081906D2840090228F /* Complex.m */; };
 		AF99120A1906D2840090228F /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9912081906D2840090228F /* Complex.m */; };
 		AF99120C190856780090228F /* RandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF99120B190856780090228F /* RandomTest.m */; };
-		AF99120F190858830090228F /* GlobalThingieChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = AF99120E190858830090228F /* GlobalThingieChanger.m */; };
 		AFC39F8718608043003B753A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC39F8618608043003B753A /* Foundation.framework */; };
 		AFC39F8A18608043003B753A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC39F8918608043003B753A /* main.m */; };
 		AFC39F8E18608043003B753A /* prog1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC39F8D18608043003B753A /* prog1.1 */; };
@@ -70,8 +69,6 @@
 		AF9912071906D2840090228F /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Complex.h; path = prog1Tests/Complex.h; sourceTree = SOURCE_ROOT; };
 		AF9912081906D2840090228F /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Complex.m; path = prog1Tests/Complex.m; sourceTree = SOURCE_ROOT; };
 		AF99120B190856780090228F /* RandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomTest.m; sourceTree = "<group>"; };
-		AF99120D190858830090228F /* GlobalThingieChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalThingieChanger.h; sourceTree = "<group>"; };
-		AF99120E190858830090228F /* GlobalThingieChanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalThingieChanger.m; sourceTree = "<group>"; };
 		AFC39F8318608043003B753A /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC39F8618608043003B753A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFC39F8918608043003B753A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,8 +130,6 @@
 				AF9912001906B9990090228F /* Square.m */,
 				AF9912031906BB230090228F /* XYPoint.h */,
 				AF9912041906BB230090228F /* XYPoint.m */,
-				AF99120D190858830090228F /* GlobalThingieChanger.h */,
-				AF99120E190858830090228F /* GlobalThingieChanger.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -291,7 +286,6 @@
 				AFC39F8A18608043003B753A /* main.m in Sources */,
 				AF06298619044829006E8BE4 /* Fraction.m in Sources */,
 				AF9911FA1906AB890090228F /* Rectangle.m in Sources */,
-				AF99120F190858830090228F /* GlobalThingieChanger.m in Sources */,
 				AF9912091906D2840090228F /* Complex.m in Sources */,
 				AF9912051906BB230090228F /* XYPoint.m in Sources */,
 			);
