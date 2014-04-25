@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF06298619044829006E8BE4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AF06298519044829006E8BE4 /* Fraction.m */; };
+		AF57BB531909E54F00DBAB08 /* Fraction+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = AF57BB521909E54F00DBAB08 /* Fraction+MathOps.m */; };
+		AF57BB541909E54F00DBAB08 /* Fraction+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = AF57BB521909E54F00DBAB08 /* Fraction+MathOps.m */; };
 		AF5F985E1905B52E00DD9946 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0629EF19054B72006E8BE4 /* XCTest.framework */; };
 		AF5F98641905B52E00DD9946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5F98621905B52E00DD9946 /* InfoPlist.strings */; };
 		AF5F98721905BE1500DD9946 /* FractionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5F986D1905B53F00DD9946 /* FractionTest.m */; };
@@ -54,6 +56,8 @@
 		AF06298419044829006E8BE4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		AF06298519044829006E8BE4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; tabWidth = 4; };
 		AF0629EF19054B72006E8BE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF57BB511909E54F00DBAB08 /* Fraction+MathOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fraction+MathOps.h"; sourceTree = "<group>"; };
+		AF57BB521909E54F00DBAB08 /* Fraction+MathOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Fraction+MathOps.m"; sourceTree = "<group>"; };
 		AF5F985D1905B52E00DD9946 /* prog1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prog1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5F98611905B52E00DD9946 /* prog1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "prog1Tests-Info.plist"; sourceTree = "<group>"; };
 		AF5F98631905B52E00DD9946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				AF9912081906D2840090228F /* Complex.m */,
 				AF06298419044829006E8BE4 /* Fraction.h */,
 				AF06298519044829006E8BE4 /* Fraction.m */,
+				AF57BB511909E54F00DBAB08 /* Fraction+MathOps.h */,
+				AF57BB521909E54F00DBAB08 /* Fraction+MathOps.m */,
 				AF9911F81906AB890090228F /* Rectangle.h */,
 				AF9911F91906AB890090228F /* Rectangle.m */,
 				AF9911FF1906B9990090228F /* Square.h */,
@@ -274,6 +280,7 @@
 				AF9911FB1906AB890090228F /* Rectangle.m in Sources */,
 				AF99120A1906D2840090228F /* Complex.m in Sources */,
 				AF9912021906B9990090228F /* Square.m in Sources */,
+				AF57BB541909E54F00DBAB08 /* Fraction+MathOps.m in Sources */,
 				AF9911FE1906AD010090228F /* RectangleTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 				AF06298619044829006E8BE4 /* Fraction.m in Sources */,
 				AF9911FA1906AB890090228F /* Rectangle.m in Sources */,
 				AF9912091906D2840090228F /* Complex.m in Sources */,
+				AF57BB531909E54F00DBAB08 /* Fraction+MathOps.m in Sources */,
 				AF9912051906BB230090228F /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

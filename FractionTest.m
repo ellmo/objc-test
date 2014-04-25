@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Fraction.h"
+#import "Fraction+MathOps.h"
 
 @interface FractionTest : XCTestCase; @end
 

@@ -19,10 +19,6 @@
 
 -(void) setTo: (int)n over: (int)d;
 -(Fraction*) reduce;
--(Fraction*) add: (Fraction*)fraction;
--(Fraction*) subtract: (Fraction*)fraction;
--(Fraction*) multiply: (Fraction*)fraction;
--(Fraction*) divide: (Fraction*)fraction;
 
 -(NSString *) toString;
 -(double) toDouble;

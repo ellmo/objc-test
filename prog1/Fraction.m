@@ -12,6 +12,9 @@ static int gCounter;
 
 @implementation Fraction
 
+@synthesize numerator = _numerator;
+@synthesize denominator = _denominator;
+
 +(Fraction *)allocF
 {
     gCounter++;
@@ -61,42 +64,13 @@ static int gCounter;
     return self;
 }
 
--(Fraction *) add: (Fraction *)fraction
+-(double) toDouble
 {
-    Fraction *result = [Fraction new];
-    
-    int newDenominator = _denominator * fraction.denominator;
-    int newNumerator = (_numerator * fraction.denominator) + (_denominator * fraction.numerator);
-    [result setTo:newNumerator over:newDenominator];
-    
-    return [result reduce];
-}
-
--(Fraction *) subtract: (Fraction *)fraction
-{
-    Fraction *negative = [Fraction new];
-    [negative setTo: -fraction.numerator
-               over: fraction.denominator];
-    
-    return [self add: negative];
-}
-
--(Fraction *)multiply:(Fraction *)fraction
-{
-    Fraction *result = [Fraction new];
-    
-    [result setTo:(_numerator * fraction.numerator)
-             over:(_denominator * fraction.denominator)];
-    
-    return [result reduce];
-}
-
--(Fraction *)divide:(Fraction *)fraction
-{
-    Fraction *inversed = [Fraction new];
-    [inversed setTo:fraction.denominator over:fraction.numerator];
-    
-    return [self multiply: inversed];
+    if (_denominator != 0) {
+        return (double) _numerator / _denominator ;
+    } else {
+        return NAN;
+    }
 }
 
 -(NSString *) toString
@@ -109,12 +83,4 @@ static int gCounter;
     }
 }
 
--(double) toDouble
-{
-    if (_denominator != 0) {
-        return (double) _numerator / _denominator ;
-    } else {
-        return NAN;
-    }
-}
 @end
