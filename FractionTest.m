@@ -37,6 +37,12 @@
     XCTAssertTrue([fractions count] == 3);
 }
 
+- (void)testCustomInit
+{
+    Fraction *fraction = [Fraction new];
+    XCTAssertEqualObjects([fraction toString], @"0/1");
+}
+
 - (void)testInitWithOver
 {
     Fraction *fraction, *fraction2;
